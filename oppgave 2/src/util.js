@@ -11,8 +11,7 @@ const names = [
   'Amanda',
   'Morgan',
 ];
-
-export const users = [];
+const users = [];
 
 const createRandomAge = () => {
   return Math.floor(Math.random() * 100 + 1);
@@ -28,5 +27,6 @@ const createUsers = (userCount) => {
     users.push(user);
   }
 };
-
 createUsers(11);
+
+module.exports = users;
